@@ -40,11 +40,11 @@ const ResultSearch = () => {
               :
               <div className="d-flex w-100 align-items-center justify-content-center vh-100 flex-wrap">
                 <h2 className="text-center d-block w-100 ">No results found</h2>
-                <Link className="text-decoration-none text-black" to="/"><p className="w-100 border text-center">Back to home</p></Link>
               </div>
-
-
             }
+          </div>
+          <div className="d-flex justify-content-center">
+            <Link to="/"><Button variant="primary">Back to home</Button></Link>
           </div>
         </>:
         <div className="d-flex align-items-center justify-content-center vh-100">
