@@ -18,10 +18,12 @@ const Home = () => {
 
    useEffect(() => {
     fetchApi();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     fetchApi();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page])
 
   return (
@@ -32,7 +34,7 @@ const Home = () => {
           <div className="d-flex p-2 justify-content-between align-items-center flex-wrap" >
             {
               data.map((data,index) =>
-              <Link to='detail'><div key={index} className="border rounded m-2 position-relative columnoverlay">
+              <Link key={index} to={`/detail/${data.alpha3Code}`}><div  className="border rounded m-2 position-relative columnoverlay">
                 <div className="overlay text-center bg-primary">
                   <p className="text-center">{data.name}</p>
                 </div>

@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Countries app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+country application using the API [Restcountries](https://restcountries.com/).
 
 ## Available Scripts
 
